@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Página Personal - Jairito</title>
+    <link rel="icon" href="img/pc.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Menú encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jairo Rojas</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">HOJA DE VIDA</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="imagen-hero">
+            </div>
+            <h1 id="mi-nombre"></h1>
+            <h2>Estudiante Ingenieria de Sistemas</h2>
+            <div class="redes">
+                <a href="https://github.com/JairoARojasR" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/jairoalexis.rojas.3/" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UC2iQjlyAr9zl89wQD8DGETg" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/jairo_rojas21/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jairo ✌️</span> Bienvenido a mi página web personal, soy estudiante de ingenierÍa de
+                sistemas, apacionado por el mundo de la programación.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-02-2003 (20 Años)
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jairoalexisrojas@gmail.com
+                        </li>
+
+                        <li>
+                            <strong>Ubicación</strong>
+                            Cúcuta, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Programador Junior</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interesés</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <a href="https://store.steampowered.com/app/1811260/EA_SPORTS_FIFA_23/" target="_blank">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </a>
+                        </div>
+
+                        <div class="interes">
+                            <a href="https://www.youtube.com/watch?v=Qg9T5vrYFgA&pp=ygUJbW9yYXQgbWl4" target="_blank">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MÚSICA</span>
+                            </a>
+                        </div>
+
+                        <div class="interes">
+                            <a href="https://www.youtube.com/watch?v=677f5eQQ9wU" target="_blank">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>DEPORTE</span>
+                            </a>
+                        </div>
+
+                        <div class="interes">
+                            <a href="https://psicologiaymente.com/cultura/libros-recomendados" target="_blank">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </a>
+                        </div>
+
+                        <div class="interes">
+                            <a href="https://platzi.com/ruta/ruta-software/" target="_blank">
+                                <i class="fa-solid fa-computer"></i>
+                                <span>INGENIERIA</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- TECNICAS -->
+                <div class="col">
+                    <h3>HABILIDADES TÉCNICAS</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>sql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Software de Contabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROFESIONALES -->
+                <div class="col">
+                    <h3>HABILIDADES SOCIALES</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM/HOJA DE VIDA -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Hoja de vida</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Primaria</h4>
+                        <span class="lugar">Instituto técnico sede montebello.</span>
+                        <span class="fecha">Los patios, Norte de Santander</span>
+                        <span class="fecha">2014</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secundaria</h4>
+                        <span class="lugar">Colegio Once de Noviembre</span>
+                        <span class="fecha">Los patios, Norte de Santander</span>
+                        <span class="fecha">2020</span>
+                        <p>Título Obténido: Bachiller Técnico</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Títulos Obtenidos - SENA</h4>
+                        <span class="lugar">Sena</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>-Técnico en Contabilización de operaciones comerciales y financieras.</p>
+                        <br>
+                        <p>-Curso especial en educación económica y financiera para la formación básica.</p>
+                        <br>
+                        <p>-Curso especial en contabilidad básica.</p>
+                        <br>
+                        <p>-Curso especial en servicio al cliente principios básicos.</p>
+                        <br>
+                        <p>-Curso especial en elaboración De Documentos Organizacionales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Títulos Obtenidos - Platzi</h4>
+                        <span class="lugar">Platzi</span>
+                        <span class="fecha">2021</span>
+                        <p>-Curso de Introducción a la terminal y línea de comandos.</p>
+                        <br>
+                        <p>-Curso introducción a Java.</p>
+                        <br>
+                        <p>-Curso Programación Orientada a objetos con java.</p>
+                        <br>
+                        <p>-Curso Profesional Git y Github.</p>
+                        <br>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Aprendiz Etapa Productiva.</h4>
+                        <span class="lugar">AutoRepuestos y Servicios la Redoma.</span>
+                        <span class="fecha">2019</span>
+                        <p><b>Funciones:</b> Apoyar las actividades administrativas y contables de la empresa.</p>
+                        <br>
+                        <p><b>Duración: </b> 6 meses.</p>
+                        <br>
+                        <p><b>Fecha de inicio: </b> 04 de febrero de 2019.</p>
+                        <br>
+                        <p><b>Duración: </b> 16 de agosto de 2019.</p>
+
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/JairoARojasR/TiendaDeMuebles" target="_blank">
+                        <img src="img/TiendaMuebles.png" alt="">
+                        <div class="overlay">
+                            <h3>TIENDA MUEBLES</h3>
+                            <p>Página Web</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://github.com/JulianL76/calculadoraEDOS" target="_blank">
+                        <img src="img/Calculadora.png" alt="">
+                        <div class="overlay">
+                            <h3>CALCULADORA E.D</h3>
+                            <p>Aplicación de Escritorio</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://github.com/JairoARojasR/Edit-UFPS" target="_blank">
+                        <img src="img/EditUFPS.png" alt="">
+                        <div class="overlay">
+                            <h3>EDITOR DE TEXTO <br> EDIT-UFPS</h3>
+                            <p>Aplicación de Escritorio</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/JairoARojasR/HealthyOnBoard" target="_blank">
+                        <img src="img/HealthyOnBoard.png" alt="">
+                        <div class="overlay">
+                            <h3>HealthyBoard</h3>
+                            <p>Página Web.</p>
+                        </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/JairoARojasR" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/jairoalexis.rojas.3/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UC2iQjlyAr9zl89wQD8DGETg" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/jairo_rojas21/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
